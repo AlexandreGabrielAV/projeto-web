@@ -1,0 +1,75 @@
+===========================================================================
+  
+                             Inicio da aula
+
+===========================================================================
+
+//Entrando na área de trabalho
+
+cd desktop
+
+===========================================================================
+
+//Identificando o usuário que fará as alterações (aparece no github)
+
+git config --global user.name "Alexandre Gabriel"
+git config --global user.email "alexandregabrielviaro@gmail.com"
+
+===========================================================================
+
+//Copiando o projeto do GitHub para o Pc
+
+git clone https://github.com/AlexandreGabrielAV/projeto-web
+
+===========================================================================
+
+//Entrando na pasta do projeto
+
+cd projeto-web
+
+===========================================================================
+
+//Abrindo o VScode
+
+code .
+
+===========================================================================
+
+//Criando e inciando o ambiente virtual
+
+python -m venv venv
+venv\Scripts\activate
+
+===========================================================================
+
+//Instalando todos os requerimentos para rodar o projeto
+
+pip install -r requirements.txt
+
+===========================================================================
+
+//Conferindo o github
+
+git status
+git remote -v
+
+===========================================================================
+
+//Conferindo o Flask
+pip show flask
+
+===========================================================================
+
+//Rodando o python
+
+python app.py
+
+===========================================================================
+
+//Entrando no site
+
+127.0.0.1:5000
+
+
+
+
