@@ -40,10 +40,6 @@ def idade(ano):
 def salvar(nome):
     return f'Você salvou o produto [ {nome} ] com sucesso!'
 
-
-
-
-
 @app.route('/html')
 def pagina_html():
     return render_template('index.html')
@@ -66,6 +62,22 @@ def calcular(nome, ano):
     return render_template('variaveis.html', nome_usuario = nome, ano_atual = ano_atual, nascimento = ano, idade = idade, status = status)
 
 
+
+
+
+@app.route('/dicio')
+def dicionario():
+    dados= {
+        'chave' : 'valor',
+        'curso' : 'GTI',
+        'local' : 'Fatec Jahu',
+        'semestre' : 4,
+    }
+    return render_template('dicionario.html', **dados)
+
+@app.route('/condicao/<int:numero>')
+def condicao(numero):
+    return render_template('condicao.html', numero=numero)
 
 
 
