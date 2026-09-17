@@ -48,6 +48,16 @@ def pagina_html():
 def cardapio():
     return render_template('cardapio.html')
 
+
+
+
+
+
+
+
+
+
+
 @app.route('/calcular/<nome>/<int:ano>')
 def calcular(nome, ano):
     ano_atual = datetime.now().year
@@ -74,6 +84,10 @@ def dicionario():
         'semestre' : 4,
     }
     return render_template('dicionario.html', **dados)
+
+
+
+
 
 @app.route('/condicao/<int:numero>')
 def condicao(numero):
