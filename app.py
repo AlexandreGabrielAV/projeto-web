@@ -100,7 +100,7 @@ def condicao(numero):
 def formulario():
 
     if request.method == 'POST':
-        nome = str(request.form['nome'])
+        nome = request.form.get['nome', 'Nada enviado']
         num1 = int(request.form['numero1'])
         num2 = float(request.form['numero2'])
 
