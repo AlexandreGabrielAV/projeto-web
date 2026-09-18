@@ -84,6 +84,30 @@ git push
 
 https://gti-fatec-jahu.github.io/PI-GTI-2026-2/
 
+===========================================================================
+
+
+
+                          CRIANDO DO ZERO
+
+
+
+===========================================================================
+
+mkdir "nome da pasta"
+
+cd "nome da pasta"
+
+git init 
+
+python -m venv venv
+venv\Scripts\activate
+
+pip install flask
+
+
+
+
 
 
 
